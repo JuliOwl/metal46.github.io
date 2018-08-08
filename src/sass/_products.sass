@@ -1,0 +1,102 @@
+.type-of-product
+    margin-bottom: 0
+    background-color: $bg-dark
+    &s
+        margin: 0, 400px
+        text-align: center
+        &__title 
+            padding-top: 172px
+            padding-bottom: 98px
+        &__menu 
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            margin-bottom: 43px
+            .grid
+                text-align: center
+                .t-bar-button 
+                    padding: 23px 50px
+                    color: $text-light
+                    border: none
+                    outline: none
+                    background-color: $bg-dark
+                    font-family: "Proxima Nova", sans-serif
+                    font-size: 21px
+                    font-weight: 700
+                    text-transform: uppercase
+                    &:active
+                        color: $bg-light
+
+        &__descr 
+            margin: 0
+            .Gates__menu
+                display: block
+                width: 73%
+                margin-left: auto
+                margin-right: auto
+                margin-bottom: 73px
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4)
+                .grid
+                    display: grid 
+                    grid-template-columns: repeat(3, 1fr)
+                    .t-bar-button__gates
+                        padding-top: 23px
+                        padding-bottom: 23px
+                        background-color: $bg-dark
+                        color: $text-light
+                        border: none
+                        outline: none
+                        font-family: "Gotham Pro", sans-serif
+                        font-size: 18px
+                        font-weight: 500
+                        &:active 
+                            color: $bg-light
+                        &:first-child
+                            text-align: right
+                        &:last-child
+                            text-align: left
+
+            .recoiling-descr
+                &__block
+                    margin-bottom: 600px
+                    display: block
+                    width: 73%
+                    margin-left: auto
+                    margin-right: auto
+                    padding-bottom: 190px
+                &__grid 
+                    display: grid 
+                    grid-template-columns: repeat(3, 1fr)
+
+                &__1
+                    font-family: "Proxima Nova", sans-serif
+                    font-size: 16px
+                    font-weight: 400
+                    text-align: left
+                    padding-right: 37px
+                    .cost 
+                        font-size: 20px
+                        font-weight: 400
+                        padding-bottom: 39px
+                &__2 
+                    font-weight: 400
+                    text-align: left
+                    padding-right: 30px
+                    .info 
+                        color: $bg-light
+                        font-size: 20px
+                        font-weight: 700
+                        line-height: 23px
+                &__3 
+                    img 
+                        min-width: 100%
+
+        .lightbox
+            &__img 
+                margin-top: 115px
+            &__button 
+                margin-top: 44px
+                background-color: transparent
+                font-family: "Gotham Pro"
+                font-size: 14px
+                font-weight: 700   
+                text-transform: none 

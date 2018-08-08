@@ -1,0 +1,36 @@
+.feedback
+    padding-bottom: 190px
+    &__block
+        display: block
+        width: 80%
+        margin-left: auto
+        margin-right: auto
+        padding-top: 44px
+        padding-bottom: 44px
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4)
+        
+    &__grid
+        display: grid 
+        grid-template-columns: repeat(4, 1fr)
+        
+        &__input
+            outline: none   
+            vertical-align: middle 
+            padding-top: 19px
+            padding-bottom: 19px
+            padding-left: 29px
+            background-color: $bg-dark
+            color: $text-light
+            border-color: $bg-light
+            border-radius: 28px
+            font-family: "Gotham Pro", sans-serif
+            font-size: 18px
+            font-weight: 500
+            min-width: 272px
+        .button
+            min-width: 272px
+        p 
+            font-family: "Proxima Nova"
+            font-size: 30px
+            font-weight: 700
+            padding-top: 10px

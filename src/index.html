@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Шаблон</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+
+    <style type="text/css">
+        /* Set a size for our map container, the Google Map will take up 100% of this container */
+
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="a1" class="header">
+        <div class="header-logo">
+            <img src="img/header_logo.png" alt="Логотип">
+        </div>
+        <!-- /.header__logo -->
+        <container class="menu">
+            <nav>
+                <div class="menu-nav">
+                    <a href="#a1">Главная</a>
+                </div>
+                <!-- /.menu_nav -->
+                <div class="menu-nav">
+                    <a href="#a2">О&#160нас</a>
+                </div>
+                <!-- /.menu_nav -->
+                <div class="menu-nav">
+                    <a href="#a3">Услуги</a>
+                </div>
+                <!-- /.menu_nav -->
+                <div class="menu-nav">
+                    <a href="#a4">Отзывы</a>
+                </div>
+                <!-- /.menu_nav -->
+                <div class="menu-nav">
+                    <a href="#a5">Клиенты</a>
+                </div>
+                <!-- /.menu_nav -->
+                <div class="menu-nav">
+                    <a href="#a6">Контакты</a>
+                </div>
+                <!-- /.menu_nav -->
+            </nav>
+        </container>
+        <!-- /.menu -->
+        <div class="header-number">
+            <img src="img/number.png" alt="Номер">
+        </div>
+        <!-- /.header__logo -->
+    </header>
+
+    <section class="main">
+        <container class="main-descr">
+            <h1>
+                Кованые и сварные изделия в курске
+            </h1>
+            <p>
+                Наша компания выполняет полный спектр работ по ведению заказа, от выезда на замеры до их монтажа и обслуживания на протяжении
+                всего срока эксплуатации.
+            </p>
+            <button class="button">
+                связаться с нами
+            </button>
+        </container>
+    </section>
+
+    <section id="a2" class="block__about">
+        <container class="block__about_us">
+            <div class="block__about_us-title">
+                <h2>О &#160 н а с</h2>
+            </div>
+            <div class="block__about_us-three">
+                <div class="block__about_us_first">
+                    <div class="block__about_us-logo">
+                        <img src="img/header_logo.png" alt="Логотип">
+                    </div>
+                    <p class="descr">
+                        В течение многих лет мы являемся одним из лидеров на рынке кованых изделий. Применение последних технологий в области обработки
+                        и покраски металла, бережное отношение к многовековым традициям металлообработки позволяет специалистам
+                        компании воплощать в металле любые желания клиента. Наша компания выполняет полный спектр работ по
+                        ведению заказа, от выезда на замеры до их монтажа и обслуживания на протяжении всего срока эксплуатации.
+                        <br>
+                        <br> Высокий уровень работы и организации позволяет выполнять заказы любой сложности и объема в кратчайшие
+                        сроки.
+                    </p>
+                </div>
+                <div class="block__about_us_second">
+                    <p class="block__about_us_second-title">
+                        Наши преимущества:
+                    </p>
+                    <div class="block__about_us_second-img-descr">
+                        <div class="block__about_us_second-img">
+                            <img src="img/icon_1.png" alt="Логотип">
+                        </div>
+                        <p class="block__about_us_second-descr">
+                            Индивидуальный подход
+                        </p>
+                    </div>
+                    <div class="block__about_us_second-img-descr">
+                        <div class="block__about_us_second-img">
+                            <img src="img/icon_2.png" alt="Логотип">
+                        </div>
+                        <p class="block__about_us_second-descr">
+                            Разумные цены
+                        </p>
+                    </div>
+                    <div class="block__about_us_second-img-descr">
+                        <div class="block__about_us_second-img">
+                            <img src="img/icon_3.png" alt="Логотип">
+                        </div>
+                        <p class="block__about_us_second-descr">
+                            Качество
+                        </p>
+                    </div>
+                </div>
+                <div class="block__about_us_third">
+                    <img src="img/about_us_photo.png" alt="Логотип">
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <section class="type-of-product">
+        <container class="type-of-products">
+            <div class="type-of-products__title">
+                <h2>в и д ы &#160 и з д е л и й</h2>
+            </div>
+            <div class="type-of-products__menu">
+                <div class="grid">
+                    <button class="t-bar-button" onclick="openProd('Gates')">Ворота</button>
+                    <button class="t-bar-button" onclick="openProd('Roof')">Навесы</button>
+                    <button class="t-bar-button" onclick="openProd('Stairs')">Лестницы</button>
+                    <button class="t-bar-button" onclick="openProd('Border')">Ограждения</button>
+                    <button class="t-bar-button" onclick="openProd('Another')">Прочее</button>
+                    <button class="t-bar-button" onclick="openProd('Persanal')">Индивид.</button>
+                </div>
+            </div>
+
+            <div class="type-of-products__descr">
+
+                <div id="Gates" class="products">
+                    <div class="Gates__menu">
+                        <div class="grid">
+                            <button class="t-bar-button__gates" onclick="openGates('swinging')">Распашные ворота</button>
+                            <button class="t-bar-button__gates" onclick="openGates('recoiling')">Откартные ворота</button>
+                            <button class="t-bar-button__gates" onclick="openGates('forged')">Кованые калитки</button>
+                        </div>
+                    </div>
+
+                    <div id="swinging" class="products__gates" style="display:none">
+                        <p>swinging</p>
+                    </div>
+                    <div id="recoiling" class="products__gates">
+                        <div class="recoiling-descr__block">
+                            <div class="recoiling-descr__grid">
+                                <div class="recoiling-descr__1">
+                                    <h3>Кованые откатные ворота</h3>
+                                    <p>
+                                        Очень актуальное и востребованное у наших клиентов предложение, и в каждом конкретном случае наша компания предлагает лучшие
+                                        решения как с функциональной, так и с эстетической точки зрения.
+                                    </p>
+                                    <p class="cost">
+                                        <br>Стоимость:
+                                        <b>от 900 руб./кв.м</b>
+                                    </p>
+                                    <button class="button">
+                                        уточнить стоимость
+                                    </button>
+                                </div>
+                                <div class="recoiling-descr__2">
+                                    <p class="info"> &#128712 Полезная информация</p>
+                                    <p>
+                                        <br>Считаются
+                                        <b>более удобными</b>
+                                        для вьезда на автомобиле. Оснащаются специальным механизмом для
+                                        <b>автоматического открывания</b> и представляют собой цельное полотно, которое сдвигается
+                                        в одну сторону.
+                                    </p>
+                                </div>
+                                <div class="recoiling-descr__3">
+                                    <img src="../img/gates.png" alt="gates">
+                                </div>
+                            </div>
+                            <div class="lightbox">
+                                <div class="lightbox__img">
+                                    <a class="lightbox-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="lightbox-set">
+                                        <img class="lightbox-image" src="img/bgc_lightbox.png" alt="">
+                                    </a>
+                                    <a class="lightbox-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="lightbox-set">
+                                        <img class="lightbox-image" src="img/bgc_lightbox_center.png" alt="">
+                                    </a>
+                                    <a class="lightbox-link" href="img/gates_3.jpg" data-lightbox="lightbox-set">
+                                        <img class="lightbox-image" src="img/bgc_lightbox.png" alt="">
+                                    </a>
+                                    <a class="lightbox-link" href="img/gates_1.jpg" data-lightbox="lightbox-set">
+                                        <img class="lightbox-image" src="" alt="">
+                                    </a>
+                                    <a class="lightbox-link" href="img/gates_2.jpg" data-lightbox="lightbox-set">
+                                        <img class="lightbox-image" src="" alt="">
+                                    </a>
+                                </div>
+                                <button class="lightbox__button button">
+                                    Посмотреть больше работ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="forged" class="products__gates" style="display:none">
+                        <p>forged</p>
+                    </div>
+
+                </div>
+
+                <div id="Roof" class="products" style="display:none">
+                    <h2>Roof</h2>
+                </div>
+
+                <div id="Stairs" class="products" style="display:none">
+                    <h2>Stairs</h2>
+                </div>
+
+                <div id="Border" class="products" style="display:none">
+                    <h2>Border</h2>
+                </div>
+
+                <div id="Another" class="products" style="display:none">
+                    <h2>Another</h2>
+                </div>
+
+                <div id="Persanal" class="products" style="display:none">
+                    <h2>Persanal</h2>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="feedback__block">
+                    <div class="feedback__grid">
+                        <div class="feedback__grid__input">
+                            <p>Обратная связь</p>
+                        </div>
+                        <div class="feedback__grid__input">
+                            <form action="#">
+                                <input class="feedback__grid__input" type="tel" placeholder="Макси">
+                            </form>
+                        </div>
+                        <div class="feedback__grid__input">
+                            <form action="#">
+                                <input class="feedback__grid__input" type="tel" placeholder="Номер телефона">
+                            </form>
+                        </div>
+                        <div class="feedback__grid__input">
+                            <button class="button">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+    </section>
+
+
+    <section id="a4" class="talking-about">
+        <container class="talking-about-us">
+            <div class="talking-about-us__title">
+                <h2> ч т о &#160 г о в о р я т &#160 о &#160 н а с</h2>
+            </div>
+            <div class="talking-about-us__img">
+                <img src="../img/icon-points.png" alt="Закорючка">
+            </div>
+            <div class="talking-about-us__descr">
+                <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании позиций,
+                    занимаемых участниками в отношении поставленных задач. Равным образом сложившаяся структура организации
+                    влечет за собой процесс внедрения и модернизации модели развития.
+                </p>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider__img">
+                        <img src="../img/slider1.png" alt="1">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider2.png" alt="2">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider3.png" alt="3">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider4.png" alt="4">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider5.png" alt="5">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider6.png" alt="6">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider7.png" alt="7">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider8.png" alt="8">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider9.png" alt="9">
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/slider5.png" alt="10">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-name">
+                    <div class="name">
+                        <p>Екатерина Кpоюкова</p>
+                    </div>
+                    <div class="name">
+                        <p>Мария Зальц</p>
+                    </div>
+                    <div class="name">
+                        <p>Виктор Кубриков</p>
+                    </div>
+                    <div class="name">
+                        <p>Екатерина Алина</p>
+                    </div>
+                    <div class="name">
+                        <p>Виктория Пак</p>
+                    </div>
+                    <div class="name">
+                        <p>Анастасия Дорогова</p>
+                    </div>
+                    <div class="name">
+                        <p>Артур Зайцев</p>
+                    </div>
+                    <div class="name">
+                        <p>Валентина Окова</p>
+                    </div>
+                    <div class="name">
+                        <p>Альберт Нос</p>
+                    </div>
+                    <div class="name">
+                        <p>Альбина Муратова</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <section id="a5" class="our-client">
+        <container class="our-clients">
+            <div class="our-clients__title">
+                <h2>н а ш и &#160 к л и е н т ы</h2>
+            </div>
+            <div class="our-clients__logo">
+                <div class="logo1 logo">
+                    <img src="../img/logo1.png" alt="1">
+                </div>
+                <div class="logo2 logo">
+                    <img src="../img/logo2.png" alt="2">
+                </div>
+                <div class="logo3 logo">
+                    <img src="../img/logo3.png" alt="3">
+                </div>
+                <div class="logo4 logo">
+                    <img src="../img/logo4.png" alt="4">
+                </div>
+                <div class="logo5 logo">
+                    <img src="../img/logo5.png" alt="5">
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <section class="contacts">
+        <div id="map"></div>
+
+        <!-- <script type="text/javascript" 
+                charset="utf-8" 
+                async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A11b28ae93f474815c26a4c9b98d37c20767754b3cc5818f688c3e58b7ae09008&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+        </script> -->
+        <div id="a6" class="contacts-block">
+            <div class="contacts-block__title">
+                <p>КОНТАКТЫ</p>
+            </div>
+            <div class="contacts-block__body">
+                <div class="contacts-block__body-phone">
+                    <img src="../img/contact-phone.png" alt="phone">
+                </div>
+                <div class="contacts-block__body-email">
+                    <img src="../img/e-mail.png" alt="e-mail">
+                </div>
+                <div class="contacts-block__body-adress">
+                    <img src="../img/adress.png" alt="adress">
+                </div>
+                <button class="button">
+                    связаться с нами
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="img/header_logo.png" alt="Логотип">
+        </div>
+        <div class="footer-rights">
+            <p>Все права защищены © 2017</p>
+        </div>
+        <div class="footer-site">
+            <p>Cайт разрботан в B R U M E</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <!-- </script> -->
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.lightbox__button').on("click", function () {
+                $('.lightbox').show()
+            });
+        });
+    </script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices': true,
+            'showImageNumberLabel': false
+        })
+    </script>
+
+
+    <script>
+        function openProd(Name) {
+            var i;
+            var x = document.getElementsByClassName("products");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(Name).style.display = "block";
+        }
+    </script>
+
+    <script>
+        function openGates(Name) {
+            var i;
+            var x = document.getElementsByClassName("products__gates");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(Name).style.display = "block";
+        }
+    </script>
+
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 9,
+            arrows: true,
+            infinite: true,
+            asNavFor: '.slider-name',
+            //autoplay: true,
+            //autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 8,
+                }
+            },
+            {
+                breakpoint: 1650,
+                settings: {
+                    slidesToShow: 7,
+                }
+            },
+            {
+                breakpoint: 1550,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 1450,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            ],
+            nextArrow: '<div class="slider-arrow slider-arrow__right"></div>',
+            prevArrow: '<div class="slider-arrow slider-arrow__left"></div>'
+        });
+    </script>
+    <script>
+        $('.slider-name').slick({
+            slidesToShow: 1,
+            arrows: false,
+            //autoplay: true,
+            //autoplaySpeed: 2000,
+            infinite: true
+        });
+    </script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUpccrNNlK4XAeG0AwLnQ-q6dPkJK1dcI&callback=init"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 16,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(51.7240589, 36.1497912), // New York
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(51.7248221, 36.1426862),
+                map: map,
+                icon: "img/map.png"
+            });
+        }
+    </script>
+
+</body>
+
+</html>
